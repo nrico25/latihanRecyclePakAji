@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements  adapterMakanan.I
 
     adapterMakanan adapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,19 +27,19 @@ public class MainActivity extends AppCompatActivity implements  adapterMakanan.I
         rvFood = findViewById(R.id.rvMakananFav);
 
         listDataMakanan = new ArrayList<>();
-        listDataMakanan.add(new modelMakanan(R.drawable.naspad, "Nasi Padang", "Nasi yang dilengkapi dengan rendang"));
-        listDataMakanan.add(new modelMakanan(R.drawable.naskraw, "Nasi Krawu", "Kuliner khas Gresik yang gurih dan pedas"));
-        listDataMakanan.add(new modelMakanan(R.drawable.nasgor, "Nasi Goreng KAI", "Nasi Goreng legendaris restorasi KAI"));
-        listDataMakanan.add(new modelMakanan(R.drawable.naslemak, "Nasi Lemak", "Makanan khas Melayu"));
-        listDataMakanan.add(new modelMakanan(R.drawable.bakar, "Ayam Bakar", "Sepotong Paha ayam yang dibalur kecap dan dibakar diatas arang"));
-        listDataMakanan.add(new modelMakanan(R.drawable.geprek, "Ayam Geprek", "Ayam Tepung yang di Geprek diberi sambal bawang yang pedas"));
-        listDataMakanan.add(new modelMakanan(R.drawable.sate_ayam, "Sate Ayam", "Sate ayam khas Ponorogo yang sangat lezat"));
-        listDataMakanan.add(new modelMakanan(R.drawable.lontong, "Lontong sayur", "Lontong yang disiram sayur lodeh dengan diberi kerupuk"));
-        listDataMakanan.add(new modelMakanan(R.drawable.bakso, "Bakso Malang", "Makanan Khas Malang"));
-        listDataMakanan.add(new modelMakanan(R.drawable.mie_ayam, "Mie Ayam", "Mie rebus khas nusantara"));
-        listDataMakanan.add(new modelMakanan(R.drawable.bothok_mercon, "Bothok Mercon", "Bothok super pedas asli Mbah wiro Sragen"));
-        listDataMakanan.add(new modelMakanan(R.drawable.gudeng, "Gudeng", "Nasi dengan sayur nangka,telur,dan Krecek"));
-        listDataMakanan.add(new modelMakanan(R.drawable.soto_kudus, "Soto Kebo", "Soto bening dengan daging Kerbau khas Kudus"));
+        listDataMakanan.add(new modelMakanan("Nasi Padang", "Nasi yang dilengkapi dengan rendang", "https://cdn.rri.co.id/berita/1/images/1689391542821-images_(22)/1689391542821-images_(22).jpeg"));
+//        listDataMakanan.add(new modelMakanan("Nasi Krawu", "Kuliner khas Gresik yang gurih dan pedas", ""));
+//        listDataMakanan.add(new modelMakanan(R.drawable.nasgor, "Nasi Goreng KAI", "Nasi Goreng legendaris restorasi KAI"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.naslemak, "Nasi Lemak", "Makanan khas Melayu"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.bakar, "Ayam Bakar", "Sepotong Paha ayam yang dibalur kecap dan dibakar diatas arang"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.geprek, "Ayam Geprek", "Ayam Tepung yang di Geprek diberi sambal bawang yang pedas"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.sate_ayam, "Sate Ayam", "Sate ayam khas Ponorogo yang sangat lezat"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.lontong, "Lontong sayur", "Lontong yang disiram sayur lodeh dengan diberi kerupuk"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.bakso, "Bakso Malang", "Makanan Khas Malang"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.mie_ayam, "Mie Ayam", "Mie rebus khas nusantara"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.bothok_mercon, "Bothok Mercon", "Bothok super pedas asli Mbah wiro Sragen"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.gudeng, "Gudeng", "Nasi dengan sayur nangka,telur,dan Krecek"));
+//        listDataMakanan.add(new modelMakanan(R.drawable.soto_kudus, "Soto Kebo", "Soto bening dengan daging Kerbau khas Kudus"));
 
 
         // call adapter class

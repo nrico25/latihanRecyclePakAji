@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 public class adapterMakanan extends RecyclerView.Adapter<adapterMakanan.ViewHolder> {
@@ -34,8 +36,8 @@ public class adapterMakanan extends RecyclerView.Adapter<adapterMakanan.ViewHold
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final modelMakanan itemsFood = this.listData.get(position);
         holder.nameFood.setText(itemsFood.getNameFood());
-        holder.imageFood.setImageResource(itemsFood.getImageFood());
         holder.desFood.setText(itemsFood.getDesFood());
+        Glide.with(holder.view).load(itemsFood.getImageUrl()).into(holder.imageUrl);
     }
 
     @Override
@@ -44,12 +46,14 @@ public class adapterMakanan extends RecyclerView.Adapter<adapterMakanan.ViewHold
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-        ImageView imageFood;
+        View view;
+        ImageView imageUrl;
         TextView  nameFood;
         TextView  desFood;
         public ViewHolder(@NonNull View itemView){
             super(itemView);
-            imageFood = itemView.findViewById(R.id.ivMakanan);
+            view = itemView;
+            imageUrl = itemView.findViewById(R.id.ivMakanan);
             nameFood = itemView.findViewById(R.id.tvnameFood);
             desFood = itemView.findViewById(R.id.tvDeskripsiFood);
             itemView.setOnClickListener(this);

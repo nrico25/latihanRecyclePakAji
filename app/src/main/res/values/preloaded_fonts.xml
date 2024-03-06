@@ -5,5 +5,8 @@
         <item>@font/bungee_inline</item>
         <item>@font/chewy</item>
         <item>@font/croissant_one</item>
+        <item>@font/montserrat_subrayada</item>
+        <item>@font/poppins_semibold</item>
+        <item>@font/poppins_thin</item>
     </array>
 </resources>
